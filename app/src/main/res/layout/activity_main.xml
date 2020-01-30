@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        app:title="Retrofit and Json "
+        app:subtitle="data reading from api"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            android:layout_marginTop="6dp"
+            android:id="@+id/recycler" />
+
+
+
+
+
+
+  <!--  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview"
+        android:textColor="#000"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="3dp"
+        android:layout_marginTop="8dp"
+        android:padding="6dp"
+        android:hint="data will start appearing here"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"/>-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
